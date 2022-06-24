@@ -14,8 +14,8 @@ from time import sleep
 def countdown_from_three(func):
     def wrapper(*args, **kwargs):
         for i in range(3, 0, -1):
-            sleep(1)
             print(i)
+            sleep(1)
         func(*args, **kwargs)
     return wrapper
 
